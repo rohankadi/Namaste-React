@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namste React</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- imported from cdn links -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- First react program -->
+    <script>
+        // createElement takes 3parameters(nameOfTag, object, text inside elementTag)
+        //object is a place where you will give attributes to a tag
+        const heading = React.createElement("h1", {}, "Hello from React!");
+
+        //selection of a parent(root)
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+
+        root.render(heading);
+    </script>
+</body>
+
+</html>
